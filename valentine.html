@@ -18,6 +18,9 @@ for Paris to show the 'city of Romance'. This also did not load properly. Changi
       height: 80%;
       width: 100%;
     }
+   h1{
+    color: red;
+   }
   </style>
   <link rel="stylesheet" href="https://js.arcgis.com/4.25/esri/themes/light/main.css">
   <script src="https://js.arcgis.com/4.25/"></script>
@@ -56,7 +59,7 @@ for Paris to show the 'city of Romance'. This also did not load properly. Changi
  };
  const simpleMarkerSymbol = {
     type: "simple-marker",
-    color: [194, 70, 65],  // change colour to red for valentine theme
+    color: [255, 192, 203],  // change colour to pink for valentine theme
     outline: {
         color: [255, 255, 255], // White
         width: 2
@@ -69,6 +72,25 @@ for Paris to show the 'city of Romance'. This also did not load properly. Changi
  });
  graphicsLayer.add(pointGraphic);
 
+    const point = { //Create a point at Paris the city of romance
+    type: "point",
+    longitude: 12.322944,
+    latitude: 45.445490
+ };
+ const simpleMarkerSymbol = {
+    type: "simple-marker",
+    color: [255, 192, 203],  // change colour to pink for valentine theme
+    outline: {
+        color: [255, 255, 255], // White
+        width: 2
+    }
+ };
+
+ const pointGraphic = new Graphic({
+    geometry: point,
+    symbol: simpleMarkerSymbol
+ });
+ graphicsLayer.add(pointGraphic);
  //const popupTemplate = { Adding a pop up for the point did not load properly 
    // title: "{Name}",
     //content: "{Description}"
