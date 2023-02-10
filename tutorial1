@@ -14,26 +14,29 @@
         width: 100%;
       }
     </style>
-    
-   <link rel="stylesheet" href="https://js.arcgis.com/4.25/esri/themes/light/main.css">
+
+    <link rel="stylesheet" href="https://js.arcgis.com/4.25/esri/themes/light/main.css">
     <script src="https://js.arcgis.com/4.25/"></script>
-        
-        <script>
+
+    <script>
       require(["esri/config", "esri/Map", "esri/views/MapView"], function(esriConfig, Map, MapView) {
- esriConfig.apiKey = "AAPKc2ba0f19c0534194aeb7a36975722baczR8i9-rpI8AZSfxa5KspAMNyN-WhA9fIFSX7sBDCw9OBpKJuOUacZPXE8CJGWNj5";
+
+        esriConfig.apiKey = "AAPKc2ba0f19c0534194aeb7a36975722baczR8i9-rpI8AZSfxa5KspAMNyN-WhA9fIFSX7sBDCw9OBpKJuOUacZPXE8CJGWNj5";
 
         const map = new Map({
           basemap: "arcgis-topographic" // Basemap layer service
         });
-        
-                const view = new MapView({
+
+        const view = new MapView({
           map: map,
           center: [-118.805, 34.027], // Longitude, latitude
           zoom: 13, // Zoom level
           container: "viewDiv" // Div element
         });
+
       });
     </script>
+
   </head>
   <body>
     <div id="viewDiv"></div>
