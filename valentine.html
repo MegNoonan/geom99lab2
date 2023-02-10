@@ -69,16 +69,16 @@ for Paris to show the 'city of Romance'. This also did not load properly. Changi
  });
  graphicsLayer.add(pointGraphic);
 
- //const popupTemplate = { Adding a pop up for the point did not load properly 
-   // title: "{Name}",
-    //content: "{Description}"
- //}
- //const attributes = {
-   // Name: "Paris",
-    //Description: "City of Romance. Go to the Opera for a romantic valentine night"
+ const popupTemplate = { Adding a pop up for the point did not load properly 
+    title: "{Name}",
+    content: "{Description}"
  }
+ const attributes = {
+    Name: "Paris",
+    Description: "City of Romance. Go to the Opera for a romantic valentine night"
+}
 
- const polygonGraphic = new Graphic({
+ const pointGraphic = new Graphic({
     geometry: point,
     symbol: simpleFillSymbol,
 
@@ -86,7 +86,7 @@ for Paris to show the 'city of Romance'. This also did not load properly. Changi
     popupTemplate: popupTemplate
 
  });
- graphicsLayer.add(polygonGraphic);
+ graphicsLayer.add(pointGraphic);
 
  });
 </script>
