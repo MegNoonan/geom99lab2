@@ -37,7 +37,7 @@
 
   const view = new MapView({
     map: map,
-    center: [-118.80500,34.02700], //Longitude, latitude
+    center: [6.199332,48.054771], //center in Europe
     zoom: 13,
     container: "viewDiv"
  });
@@ -45,10 +45,10 @@
  const graphicsLayer = new GraphicsLayer();
  map.add(graphicsLayer);
 
- const point = { //Create a point
+ const point = { //Create a point at Paris
     type: "point",
-    longitude: -118.80657463861,
-    latitude: 34.0005930608889
+    longitude: 2.349944,
+    latitude: 48.832343
  };
  const simpleMarkerSymbol = {
     type: "simple-marker",
