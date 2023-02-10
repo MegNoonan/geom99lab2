@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- Two different tutorials were attempted for the last part of the project but they kept failing.
  I tried commenting out the API key and then a log in window would appear when I loaded the page. I tried adding the feature layer I made 
-with 3 cities of romance but each time it failed to load. I then tried modifying the point tutorial and adding a point with a pop up 
+with 3 cities of romance but each time it failed to load (see fail page for the attempted code). I then tried modifying the point tutorial and adding a point with a pop up 
 for Paris to show the 'city of Romance'. This also did not load properly. Changing the basemap to streets caused the map to be blank.-->
 
 <!DOCTYPE html>
@@ -72,25 +72,6 @@ for Paris to show the 'city of Romance'. This also did not load properly. Changi
  });
  graphicsLayer.add(pointGraphic);
 
-    const point = { //Create a point at Paris the city of romance
-    type: "point",
-    longitude: 12.322944,
-    latitude: 45.445490
- };
- const simpleMarkerSymbol = {
-    type: "simple-marker",
-    color: [255, 192, 203],  // change colour to pink for valentine theme
-    outline: {
-        color: [255, 255, 255], // White
-        width: 2
-    }
- };
-
- const pointGraphic = new Graphic({
-    geometry: point,
-    symbol: simpleMarkerSymbol
- });
- graphicsLayer.add(pointGraphic);
  //const popupTemplate = { Adding a pop up for the point did not load properly 
    // title: "{Name}",
     //content: "{Description}"
